@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20170506082828) do
     t.text     "main_content", limit: 65535, null: false
     t.text     "sub_content",  limit: 65535, null: false
     t.float    "latitude",     limit: 24,    null: false
+    t.float    "longitude",    limit: 24,    null: false
     t.integer  "user_id",                    null: false
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
