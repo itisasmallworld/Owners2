@@ -1,0 +1,112 @@
+.contents
+  .content__top
+    -# %a#bgndVideo.player.mb_YTVPlayer{"data-property" => "{videoURL:'https://www.youtube.com/watch?v=Bgl9YwQoywM',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}", style: "display: none; background: none;", preload: "none"}
+    %p.logo Owners
+    %ul.icon
+      %li
+        %i.fa.fa-question-circle.fa-log
+        %a OWNERSについて
+      %li
+        %i.fa.fa-book.fa-log
+        %a 使い方
+      - if user_signed_in?
+        %li
+          %i.fa-user.fa-log
+          %a #{ current_user.name }さん
+      - else
+        %li
+          %i.fa.fa-plus-circle.fa-log
+          %a
+          = link_to "会員登録", new_user_registration_path
+        %li
+          %i.fa.fa-user.fa-log
+          %a
+          = link_to "ログイン", user_session_path
+  .content__center
+    %p.text
+      OWNERSは、全国からとっておきの「オーナー制度」を集めた
+      %br プラットフォームサービスです。
+    %h2.usage ----- OWNERS利用ステップ  -----
+    .process-flow
+      .process
+        %i.fa.fa-search.fa-2x
+        %h3.sub-text1 1.プランを探す
+        %h4.sub-text2
+          生産者から提供しているプランから
+          %br お気に入りのオーナー制度を
+          見つけてください
+      .process
+        %i.fa.fa-user.fa-2x
+        %h3.sub-text1 2.オーナーになる
+        %h4.sub-text2
+          商品の送り先の必要な情報を入力
+          %br して現在募集中のオーナー
+          制度に登録してください
+      .process
+        %i.fa.fa-gratipay.fa-2x
+        %h3.sub-text1 3.プロセスを楽しむ
+        %h4.sub-text2
+          生産者から届く生産状況など様々
+          %br な情報をOWNERS上で
+          チェックすることができます
+      .process
+        %i.fa.fa-shopping-bag.fa-2x
+        %h3.sub-text1 4.商品が届く
+        %h4.sub-text2
+          お待たせいたしました！！
+          %br 生産者が育てた商品
+          があなたの元へと届きます
+  .content__bottom
+    = @projects.each do |project|
+      .items
+        .content
+          .status
+          %p.open 受付中
+          = link_to project_path(project) do
+            %img.item{ src: "https://s3-ap-northeast-1.amazonaws.com/owners-pro/Product/60/main_image/w340h223_akihime3.jpg" }
+            %h4
+        .content
+          .status
+          %p.open 受付中
+          %img.item{ src: "https://s3-ap-northeast-1.amazonaws.com/owners-pro/Product/56/main_image/w340h223_styubenmain.png" }
+          %h4
+        .content
+          .status
+          %p.open 受付中
+          %img.item{ src: "https://s3-ap-northeast-1.amazonaws.com/owners-pro/Product/57/main_image/w340h223_iwashimizu_main.jpg" }
+          %h4
+      .items
+        .content
+          .status
+          %p.open 受付中
+          %img.item{ src: "https://s3-ap-northeast-1.amazonaws.com/owners-pro/Product/60/main_image/w340h223_akihime3.jpg" }
+          %h4
+        .content
+          .status
+          %p.open 受付中
+          %img.item{ src: "https://s3-ap-northeast-1.amazonaws.com/owners-pro/Product/56/main_image/w340h223_styubenmain.png" }
+          %h4
+        .content
+          .status
+          %p.open 受付中
+          %img.item{ src: "https://s3-ap-northeast-1.amazonaws.com/owners-pro/Product/57/main_image/w340h223_iwashimizu_main.jpg" }
+          %h4
+      .items
+        .content
+          .status
+          %p.open 受付中
+          %img.item{ src: "https://s3-ap-northeast-1.amazonaws.com/owners-pro/Product/60/main_image/w340h223_akihime3.jpg" }
+          %h4
+        .content
+          .status
+          %p.open 受付中
+          %img.item{ src: "https://s3-ap-northeast-1.amazonaws.com/owners-pro/Product/56/main_image/w340h223_styubenmain.png" }
+          %h4
+        .content
+          .status
+          %p.open 受付中
+          %img.item{ src: "https://s3-ap-northeast-1.amazonaws.com/owners-pro/Product/57/main_image/w340h223_iwashimizu_main.jpg" }
+          %h4
+%footer
+  %img.apple{ src: 'http://hahatoco.com/wp-content/uploads/2016/02/DSC01054-1024x768.jpg' }
+  %span.logo Owners

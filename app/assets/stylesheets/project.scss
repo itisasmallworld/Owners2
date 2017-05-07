@@ -1,0 +1,162 @@
+body, html {
+  height          : 100%;
+  background-color: white;
+}
+
+p.logo {
+  display  : inline-block;
+  position : absolute;
+  top      : 15px;
+  left     : 80px;
+  font-size: 30px;
+}
+
+p.text {
+  font-size : 25px;
+  text-align: center;
+}
+
+h2.usage {
+  font-size : 25px;
+  text-align: center;
+}
+
+ul li {
+  display: inline-block;;
+}
+
+
+ul.icon {
+  position  : absolute;
+  top       : 30px;
+  left      : 1000px;
+  list-style: none;
+
+  .fa.fa-question-circle {
+  }
+
+  .fa.fa-book {
+  }
+
+  .fa.fa-user {
+  }
+
+  .fa.fa-angle-down {
+    position: absolute;
+    z-index : 30;
+    top     : 7px;
+    left    : 380px;
+  }
+
+  button#dropdownMenu1.btn.btn-default.dropdown-toggle {
+    height: 25px;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top     : 25px;
+    left    : -100px;
+  }
+
+  ul.box {
+    padding-right: 40px;
+  }
+}
+
+h3.sub-text1 {
+  font-size: 20px;
+}
+
+h4.sub-text2 {
+  font-size: 15px;
+}
+
+p.open {
+  position   : absolute;
+  z-index    : 99;
+  line-height: 70px;
+  left       : -5px;
+  font-weight: bold;
+}
+
+header {
+  background: rgba(255,255,255,0.9);
+  position  : relative;
+  box-shadow: 0px 2px 2px 0px rgba(45,29,9,0.4);
+  width     : 100%;
+  display   : block;
+  height    : 60px;
+  z-index   : 99;
+}
+
+.contents {
+  width     : 100%;
+  min-height: 1000px;
+  overflow  : scroll;
+
+  .content__top {
+    height       : 690px;
+    border-bottom: 1px solid gray;
+  }
+
+  .content__center {
+
+    .process-flow {
+      display: -webkit-inline-box;
+      padding: 0 285px;
+
+      .process {
+      }
+    }
+  }
+
+  .content__bottom {
+    min-height      : 800px;
+
+    .items {
+      display: -webkit-inline-box;
+      margin : 50px 127px;
+
+      .content {
+        position: relative;
+      }
+
+      .status {
+        border    : none;
+        width     : 50px;
+        height    : 50px;
+        position  : absolute;
+        z-index   : 99;
+        background: yellow;
+        top       : 10px;
+        left      : -10px;
+        display   : inline-block;
+      }
+
+      img.item {
+        width       : 370px;
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+footer {
+  width           : 100%;
+  height          : 300px;
+  background-color: gray;
+  position        : relative;
+
+  img.apple {
+    height: 100%;
+    width : 100%;
+  }
+
+  span.logo {
+    position : absolute;
+    top      : 112px;
+    left     : 600px;
+    font-size: 50px;
+    color    : antiquewhite;
+  }
+}
