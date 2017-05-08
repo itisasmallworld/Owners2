@@ -8,7 +8,8 @@
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
     %header
-      %p.logo Owners
+      = link_to root_path do
+        %p.logo Owners
       %ul.icon
         %li
           %i.fa.fa-question-circle.fa-log
