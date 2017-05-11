@@ -11,7 +11,8 @@
       .dl.schedule
         .dt 募集締切
         .dd 7/31
-      .btn.apply お申し込み
+      = link_to new_project_entry_path(@project) do
+        .btn.apply お申し込み
   .product__center.clearfix
     .main_product= raw @project.main_content
     .sub_product= raw @project.sub_content
