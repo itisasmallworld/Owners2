@@ -111,57 +111,59 @@ header {
         i.fa {
           margin-left: 60px;
         }
-
       }
     }
   }
 
   .content__bottom {
-    min-height      : 800px;
-
-    .items {
-      display: -webkit-inline-box;
-      margin : 50px 127px;
-
-      .content {
-        position    : relative;
-        width: 390px;
-        margin-right: 25px;
-      }
-
-      .status {
-        border    : none;
-        width     : 50px;
-        height    : 50px;
-        position  : absolute;
-        z-index   : 99;
-        background: yellow;
-        top       : 10px;
-        left      : -10px;
-        display   : inline-block;
-      }
-
-      img.item {
-        width       : 370px;
-        margin-right: 30px;
-      }
-
-      .info {
-        line-height: 32px;
-
-        .map-marker {
-          display      : -webkit-inline-box;
-          padding-right: 215px;
-        }
-
-        .goods-price {
-          display: -webkit-inline-box
-        }
-
-      }
-    }
+    min-height: 800px;
   }
 }
+  .items {
+    margin : 50px 93px;
+
+    .content {
+      position    : relative;
+      width: 390px;
+      margin-right: 25px;
+      padding-right: 45px;
+      display: -webkit-inline-box;
+      vertical-align: top;
+    }
+
+    .status {
+      border    : none;
+      width     : 50px;
+      height    : 50px;
+      position  : absolute;
+      z-index   : 99;
+      background: yellow;
+      top       : 10px;
+      left      : -10px;
+      display   : inline-block;
+    }
+
+    img.item {
+      width       : 370px;
+      margin-right: 30px;
+    }
+  }
+
+.info {
+  line-height: 32px;
+  display: -webkit-inline-box;
+}
+
+.map-marker {
+  display      : -webkit-inline-box;
+  padding-right: 130px;
+}
+
+.goods-price {
+  display: -webkit-inline-box
+}
+
+
 
 footer {
   width           : 100%;
