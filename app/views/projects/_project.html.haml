@@ -1,0 +1,14 @@
+.content
+  .status
+  %p.open 受付中
+  = link_to project_path(project) do
+    = raw project.main_image
+    %h4= project.title
+  .info
+    .map-marker
+      %i.fa.fa-map-marker.fa-log
+      %h5.place= project.area
+    .goods-price
+      %i.fa.fa-shopping-bag.fa-log
+      %h6 ¥
+      %h5.price= project.price
