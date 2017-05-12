@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :projects, only: [:show] do
     resources :entries, only: [:new]
   end
+  resources :purchase, only: [:new]
 end
